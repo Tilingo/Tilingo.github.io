@@ -1,0 +1,118 @@
+
+.calcSection{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+input[type=text]{
+	width: 99.5%;
+	font-size: 6vw;
+	border: solid;
+	height: 30vh;
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+}
+input[type=text]:focus {
+    outline: none;
+}
+input[type=button]:focus {
+    outline: none;
+}
+input[type=button]:hover {
+    background-color: darkgrey;
+}
+.container{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	justify-content: center;
+}
+.calcWrap{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+}
+.row{
+	display: flex;
+	width: 100%;
+}
+.button{
+	width: 100%;
+	height: 110px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+input[type=button]{
+	width: 100%;
+	height: 100%;
+	font-size: 4vw;
+	border: solid;
+}
+.constants>input{background-color: #41b8f4;}
+.operator>input{background-color: #f4c741;}
+.complex>input{background-color: #f46741;}
+.regular>input{background-color: lightgrey;}
+.result>input{background-color: #52f441;}
+.clear>input{background-color: yellow;}
+.lastrow>input{background-color: #f442f1;}
+
+.constants>input:hover{background-color: blue}
+.complex>input[type=button]:hover{background-color: #f44141;}
+.orange>input[type=button]:hover{background-color:orange;}
+.result>input[type=button]:hover{background-color:green;}
+.clear>input[type=button]:hover{background-color:#d9f441;}
+.lastrow>input[type=button]:hover{background-color: #8b41f4;}
+
+
+
+@media only screen and (max-width: 375px) {
+    .complex{
+    	display: none;
+    }
+    .constants{
+    	display: none;
+    }
+    .lastrow{
+    	display: none;
+    }
+    input[type=text]{
+		height: 17.99vh;
+    }
+    input[type=button]{
+		width: 25.4vw;
+    }
+    ::-webkit-input-placeholder {
+ 		opacity: 0;
+ 	}
+
+}
+@media only screen and (min-width: 667px) and (max-width: 667px ){
+    input[type=text]{
+		height: 7vh;
+		font-size: 3vw;
+		border:none;
+		width: 99.5vw;
+    }
+    .container{
+    	width: 100vw;
+	}
+	.button>input{
+		font-size: 2vw;
+		height: 25vh;
+		padding: 0;
+	}
+	.row{
+		height: 17vh;
+	}
+
+}
+
+
+
+

@@ -1,0 +1,578 @@
+@keyframes showMenu {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 25vh;
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+footer a {
+  color: white;
+}
+
+nav {
+  display: none;
+  font-size: 1.5rem;
+}
+
+h1 a {
+  color: black;
+}
+
+input {
+  width: 50%;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+label {
+  font-size: 1.2rem;
+}
+
+.name {
+  font-size: 1.75rem;
+  color: black;
+  margin-left: 5%;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/code2.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 40vh;
+  overflow: hidden;
+}
+
+.intro2 {
+  background-image: url("../images/wireframe.jpeg");
+}
+
+.intro3 {
+  background-image: url("../images/web.jpeg");
+  height: 18.6vh;
+}
+
+.background-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 70%;
+  height: 10%;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 1%;
+}
+
+.background-box2 {
+  background-color: rgba(1, 1, 1, 0.6);
+  color: white;
+}
+
+.background-box3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 40%;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 1%;
+}
+
+.burger-wrap {
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 5%;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+.burger {
+  width: 30px;
+  height: 4px;
+  background-color: black;
+  margin: 6px 0;
+}
+
+.mobile-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3% 0;
+}
+
+
+.nav-item {
+  display: block;
+  margin: 0 0 2% 9%;
+  text-decoration: none;
+  color: black;
+}
+
+.show-menu {
+  display: block;
+  opacity: 0;
+  animation: showMenu 400ms ease-in-out forwards;
+}
+
+
+#check-menu {
+  display: none;
+}
+
+.responsive {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.responsive-header {
+  font-weight: 700;
+  margin-top: 10%;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.philosophy {
+  text-align: center;
+  margin: 7% 10% 2% 10%;
+  line-height: 1.4rem;
+  font-size: 1.2rem;
+}
+
+.responsive-back {
+  width: 100%;
+  height: 30vh;
+  background-image: url(../images/responsive.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.skills {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5% 0 5% 0;
+}
+
+.logo{
+  position: relative;
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: all 0.3s ease-in-out;
+}
+
+.show_skills {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+.html_logo {
+  width: 50%;
+  height: 30vh;
+  background-image: url(../images/html_logo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+} 
+
+.css_logo {
+  width: 60%;
+  height: 40vh;
+  background-image: url(../images/css_logo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 45% 50%;
+} 
+
+.js_logo {
+  width: 45%;
+  height: 25vh;
+  background-image: url(../images/js_logo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 70%;
+  margin-left: 3%;
+} 
+  
+.git {
+  width: 9vw;
+  height: 5vh;
+  margin-bottom: 3%;
+}
+
+.nav-item:hover {
+  text-decoration: underline;
+
+}
+
+.footer-menu-items:hover {
+  background-color: white;
+  border-radius: 5%;
+  color: black;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 10% 0;
+}
+
+.site-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5% 0;
+
+}
+
+.sites-anker {
+  width: 80%;
+  display: flex;
+  flex-direction: center;
+  position: relative;
+}
+
+.site-screenshot {
+  border: 0.1px solid black;
+  box-shadow: 1px 1px 10px #888888;
+  width: 100%;
+  height: 25vh;
+  transition: all 0.3s ease-in-out;
+}
+
+.relaxr {
+  background-image: url(../images/relaxr.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.relaxr-blog {
+  background-image: url(../images/relaxr_blog.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.citipix {
+  background-image: url(../images/citipix.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.site-description {
+  width: 80%;
+  text-align: justify;
+  font-size: 1rem;
+  margin-top: 5%;
+}
+
+.contact-title-box{
+  width: 50%;
+  background-color: rgba(1, 1, 1, 0.6);
+  text-align: center;
+}
+
+.form-wrap{
+  width: 90%;
+  margin: 15% 5%;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-rows {
+  margin: 3% 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.button {
+  margin-top: 5%;
+  align-self: center;
+  width: 30%;
+  height: 30px;
+  color: white;
+  background-color: black;
+  font-size: 0.85rem;
+}
+
+@media (min-width: 768px) {
+  
+  footer {
+    height: 35vh;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .name {
+    font-size: 2.25rem;
+  }
+
+  .intro {
+    height: 82.5vh;
+  }
+
+  .intro2 {
+    height: 82.5vh;
+  }
+
+  .intro3 {
+    background-image: url("../images/web.jpeg");
+    height: 30vh;
+  }
+
+  .background-box {
+    width: 50%;
+    height: 11%;
+    font-size: 2rem;
+  }
+
+  .background-box3 {
+    width: 50%;
+    height: 25%;
+    font-size: 2rem;
+  }
+
+  .responsive-back {
+    height: 60vh;
+  }
+
+  .responsive-header {
+    font-size: 2.5rem;
+  }
+
+  .philosophy {
+    text-align: center;
+    margin: 5% 10% 0 10%;
+    line-height: 2.5rem;
+    font-size: 1.8rem;
+  }
+
+  .skills {
+    height: 45vh;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .html_logo {
+    height: 45vh;
+  }
+
+  .css_logo {
+    height: 55vh;
+  }
+
+  .js_logo {
+    height: 30vh;
+    margin: 2% 5% 0 0;
+  }
+
+  .git {
+    width: 8vw;
+    height: 9vh;
+    margin--bottom: 3%
+  } 
+
+  .site-screenshot {
+    height: 45vh;
+  }
+
+  .site-description {
+    text-align: center;
+  }
+
+  .form-wrap{
+    margin: 10% 5%;
+  }
+    
+  .button {
+    height: 50px;
+    font-size: 1.2rem;
+  }
+
+}
+
+@media (min-width: 992px) {
+
+  nav, ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 30vw;
+    /*margin-right: 3%;*/
+    font-size: 1.8rem;
+  }
+
+  footer {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .burger-wrap {
+    display: none;
+  }
+
+  .desktop-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 3%;
+  }
+  
+  .name {
+    width: 50vw;
+    margin-left: 8%;
+    font-size: 3rem;
+  }
+
+  .responsive-back {
+    height: 70vh;
+    background-position: 50% 30%;
+
+  }
+
+  .responsive-header {
+    font-size: 3rem;
+  }
+
+  .philosophy {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  .html_logo {
+    height: 60vh;
+  }
+
+  .css_logo {
+    height: 74vh;
+  }
+
+  .js_logo {
+    height: 40vh;
+  }
+
+  .git {
+    height: 15vh;
+    align-items: center;
+  }  
+
+  .footer-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .site-screenshot {
+    height: 75vh;
+  }
+
+  .site-description {
+    width: 80%;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .site-screenshot:hover {
+    transform: scale(1.03);
+  }
+
+  .intro3 {
+    background-image: url("../images/web.jpeg");
+    height: 50vh;
+  }
+
+  .background-box3 {
+    width: 40%;
+    height: 20%;
+    font-size: 2rem;
+  }
+
+  .form-wrap{
+    width: 60%;
+    margin: 5% 20%;
+    display: flex;
+    flex-direction: column;
+  }
+ }
+}
+
+
+
+

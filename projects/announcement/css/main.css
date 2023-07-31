@@ -1,0 +1,258 @@
+*{
+	font-size: 16px;
+	font-family: 'Coustard', serif;
+	color: #00B9F1;
+}
+body, footer{
+	background: url("../images/universe.jpg");
+}
+header{
+	width: 100%;
+	display: flex;
+}
+nav{
+	display: flex;
+	justify-content: center;
+	width: 40%;
+}
+section{
+	width: 100vw;
+	height:100vh;
+	display: flex;
+}
+footer{
+	width: 100%;
+	height: 45vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-shadow: 1px 1px indigo;
+}
+table{
+	width: 45%;
+	height: 300px;
+}
+th{
+	font-size: 3.5em;
+	padding: 5%;
+	height: 20px;
+}
+td{
+	font-size: 2em;
+	text-align: center;
+	line-height: 1.5;
+}
+a{text-decoration: none;}
+
+main{
+	display: flex;
+	flex-direction: column;
+}
+.modalSOLO {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 1;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+.soloWrap {
+	width: 500px;
+	position: relative;
+	margin: 2% auto;
+}
+.close {
+	background: #606061;
+	color: #FFEE00;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+.close:hover { background: #00B9F1; }
+
+.modalSOLO:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.dropdown{display: none;}
+
+.show:hover .dropdown{
+	position: absolute;
+	display: block;
+}
+.dropitems{margin-top: 20px;}
+
+.underline:hover{
+	text-decoration: underline;
+	animation: unerAnimated 2s forwards 0s;
+}
+.row1{
+	display: flex;
+	justify-content: center;
+	padding: 5% 0 5% 0;
+}
+.row2{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	background-color: rgba(0,0,0,0.6);
+	font-size: 1.2em;
+}
+
+.poster{width: 550px;}
+
+.plot{
+	text-align: justify;
+	width: 35%;
+	line-height: 1.5;
+	text-shadow: 1px 1px indigo;
+}
+.header1{
+	flex-direction: column;
+	justify-content: space-around;
+	height: 100vh;
+}
+.nav1{align-self: flex-end;}
+
+.navitems{
+	width: 30%;
+	height: 5vh;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.8vw;
+	font-weight: bold;
+	text-shadow: 1px 1px indigo;
+}
+
+@keyframes unerAnimated {
+	0%{
+		text-decoration-color: #00B9F1;
+	}
+	70%,100%{
+		text-decoration-color: #FFEE00;
+	}
+}
+
+
+.logo{
+	width: 60%;
+	align-self: center;
+	padding-bottom: 10%;
+}
+.longtime{
+	justify-content: center;
+	align-items: center;
+}
+.intro{font-size: 7vw;}
+
+.ep{
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+	align-items: flex-end;
+}
+#epiv{background-image: url("../images/epiv.jpg");}
+#epv{background-image: url("../images/epv.jpg");}
+#epvi{background-image: url("../images/epvi.jpg");}
+
+.info{
+	width: 38%;
+	height: 550px;
+	border: 0.5px solid black;
+	border-radius: 2%;
+	background-color: rgba(0,0,0,0.6);
+	box-shadow: -1px 1px grey;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.infoiv{margin: 0 0 2% 2%;}
+.infov{margin: 0 0 0.5% 2.5%;}
+.infovi{margin: 0 0 2% 2.5%;}
+
+.movieinfoul{
+	align-self: flex-start;
+	margin: 0 5% 5% 5%;
+	font-size: 1.2em;
+}
+.movieinfoul2{margin-top: -3%;}
+.movieinfoli{margin-top: 3%;}
+
+.sinopsis{
+	text-align: justify;
+	padding: 5%;
+	font-size: 1.5vw;
+	line-height: 1.5;
+	color: lightgrey;
+}
+.sinopsis2{padding-top: 5%;}
+
+.button{
+	width: 30%;
+	height: 40px;
+	background-color: gold;
+	color: black;
+	border-color: black;
+	font-size: 1.5em;
+	border-radius: 5%;
+	box-shadow: -0.5px 0.5px lightgrey;
+	align-self: flex-end;
+	margin-right: 5%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.button:hover {
+	background-color: #00B9F1;
+	color: #FFEE00;
+}
+.nav2{
+	align-items: flex-start;
+	justify-content: flex-end;
+}
+.header2{
+	height: 25vh;
+	align-items: center;
+	justify-content: space-around;
+}
+.logoheader{
+	width: 25%;
+	padding-right: 20%;
+}
+.videowrap{
+	padding: 5%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+
+
+
+
+
+
+

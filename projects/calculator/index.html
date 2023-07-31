@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script type="text/javascript" src="js/scripts.js"></script>
+</head>
+<body>
+
+<header>
+	
+</header>
+
+<section>
+	
+</section>
+
+<section class="calcSection">
+
+
+	
+	<div class="container">
+	<form name="Calc">
+			<div class="calcWrap">
+				
+				<div class="input">
+					<input type="text" name="Input" Size="16" id="screen" placeholder="Nestor's Scientific Calculator">
+				</div>
+				<!-- Regular calculator -->
+					<div class="row">
+						<div class="button clear"><input type="button" name="ac" value=" AC  " onclick="Calc.Input.value = ''"></div>
+						<div class="button orange operator"><input type="button" name="minusplus" value=" +/- " onclick= "sign()"></div>
+						<div class="button orange operator"><input type="button" name="percentage" value="  %  " onclick="findPercentage()"></div>
+						<div class="button orange operator"><input type="button" name="division" value="  &#247;  " onclick="Calc.Input.value += '/'"></div>
+						<div class="button complex"><input type="button" name="memorys" value=" Ms " onclick= "memorySR('save')"></div>
+						<div class="button complex"><input type="button" name="memoryr" value=" Mr " onclick= "memorySR('read')"></div>
+						<div class="button complex"><input type="button" name="square" value=" Sqr " onclick= "sqr()"></div>
+
+					</div>
+					<div class="row">
+						<div class="button regular"><input type="button" name="seven" value="  7  " onclick="Calc.Input.value += '7'"></div>
+						<div class="button regular"><input type="button" name="eigth" value="  8  " onclick="Calc.Input.value += '8'"></div>
+						<div class="button regular"><input type="button" name="nine" value="  9  " onclick="Calc.Input.value += '9'"></div>
+						<div class="button orange operator"><input type="button" name="multiply" value="  x  " onclick="Calc.Input.value += '*'"></div>
+						<div class="button complex"><input type="button" name="sin" value=" Sin " onclick= "findSin()"></div>
+						<div class="button complex"><input type="button" name="cos" value=" Cos " onclick= "findCos()"></div>
+						<div class="button complex"><input type="button" name="tan" value=" Tan " onclick= "findTan()"></div>
+
+					</div>
+					<div class="row">
+						<div class="button regular"><input type="button" name="four" value="  4  " onclick="Calc.Input.value += '4'"></div>
+						<div class="button regular"><input type="button" name="five" value="  5  " onclick="Calc.Input.value += '5'"></div>
+						<div class="button regular"><input type="button" name="six" value="  6  " onclick="Calc.Input.value += '6'"></div>
+						<div class="button orange operator"><input type="button" name="minus" value=" - " onclick="Calc.Input.value += '-'"></div>
+						<div class="button complex"><input type="button" name="Ln" value=" Ln " onclick= "findLn()"></div>
+						<div class="button complex"><input type="button" name="Log" value=" Log " onclick= "findLog()"></div>
+						<div class="button complex"><input type="button" name="Factorial" value=" ! " onclick= "Calc.Input.value = factorial(Number(document.getElementById('screen').value))";"></div>
+					</div>
+					<div class="row">
+						<div class="button regular"><input type="button" name="one" value="  1  " onclick="Calc.Input.value += '1'"></div>
+						<div class="button regular"><input type="button" name="two" value="  2  " onclick="Calc.Input.value += '2'"></div>
+						<div class="button regular"><input type="button" name="three" value="  3  " onclick="Calc.Input.value += '3'"></div>
+						<div class="button orange operator"><input type="button" name="plus" value="  +  " onclick="Calc.Input.value += ' + '"></div>
+						<div class="button constants"><input type="button" name="pi" value="  &#928;  " onclick="Calc.Input.value += 'Math.PI'"></div>
+						<div class="button constants"><input type="button" name="E" value="  E  " onclick="Calc.Input.value += 'Math.E'"></div>
+						<div class="button constants"><input type="button" name="LN10" value="  Ln10  " onclick="Calc.Input.value += 'Math.LN10'"></div>
+
+					</div>
+					<div class="row">
+						<div class="button regular"><input TYPE="button" name="zero" value="  0  " onclick="Calc.Input.value += '0'"></div>
+						<div class="button regular"><input TYPE="button" name="point" value="  .  " onclick="Calc.Input.value += '.'"></div>
+						<div class="button result"><input TYPE="button" name="result" value="  =  " onclick="Calc.Input.value = eval(Calc.Input.value)"> </div>
+						<div class="button orange operator"><input type="button" name="AVG" value="AVG" onclick="avg()"></div>
+						<div class="button lastrow"><input type="button" name="Lparentesis" value="  (  " onclick="Calc.Input.value += '('"></div>
+						<div class="button lastrow"><input type="button" name="Rparentesis" value="  )  " onclick="Calc.Input.value += ')'"></div>
+						<div class="button lastrow"><input type="button" name="sqrt" value="  &#8730;  " onclick="findSqrt()"></div>
+					<!-- Scientific calculator -->
+					</div>
+				</div>
+			</div>
+	</form>	
+</section>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

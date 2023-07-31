@@ -1,0 +1,69 @@
+html{
+	margin: 0;
+	padding: 3px;
+}
+body{
+	margin: 0;
+	height: 1350px;
+	height: 800px;
+	position: relative;
+	background-color: lightblue;
+}
+
+
+.ball{
+	width: 100px;
+	height: 100px;
+	background: -webkit-linear-gradient(top, rgba(243,197,189,1) 0%,rgba(232,108,87,1) 50%,rgba(234,40,3,1) 51%,rgba(255,102,0,1) 75%,rgba(199,34,0,1) 100%);
+	border: 0.5px solid;
+	border-radius: 50px;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	pointer-events: none;
+}
+
+button{
+	position: absolute;
+	top: 750px;
+	left: 20px;
+	font-size: 30px;
+	background-color: green;
+	color: white;
+}
+.board{
+	width: 300px
+	height: 350px;
+	background-color: white;
+	border: solid;
+	position: absolute;
+	top: 750px;
+	left: 350px;
+	font-size: 30px;
+}
+h1{
+	position: absolute;
+	z-index: -1;
+	left: 100px;
+	top: 50px;
+	font-size: 60pt;
+	color:orange;
+	text-shadow: 1px 1px black;
+}
+
+h3{
+	position: absolute;
+	z-index: -1;
+	left: 800px;
+	top: 500px;
+	font-size: 20pt;
+	color:darkblue;
+	text-shadow: 1px 1px black;
+}
+.reset{
+	left: 120px;
+}
+
+
+
